@@ -164,5 +164,6 @@ uv run python a2a_client.py "Сколько времени потребуетс�
 ├── main.py            # CLI: прямой прогон графа
 ├── a2a_server.py       # поднимает CheetahBridgeAgent как A2A JSON-RPC сервер
 ├── a2a_client.py        # CLI-клиент: отправляет вопрос на a2a_server.py и печатает ответ
-└── architecture.md    # исходная спецификация
+├── architecture.md    # исходная спецификация
+└── examples.md         # реальные прогоны без сокращений
 ```

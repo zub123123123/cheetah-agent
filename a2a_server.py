@@ -1,3 +1,5 @@
+import logging
+
 import uvicorn
 from a2a.server.request_handlers import DefaultRequestHandler
 from a2a.server.routes import create_agent_card_routes, create_jsonrpc_routes
@@ -63,4 +65,8 @@ app = build_app()
 
 
 if __name__ == "__main__":
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s %(levelname)-8s %(name)s: %(message)s",
+    )
     uvicorn.run(app, host=HOST, port=PORT)
