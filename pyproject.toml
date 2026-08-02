@@ -1,0 +1,13 @@
+[project]
+name = "cheetah-agent"
+version = "0.1.0"
+description = "LangGraph agent: поиск фактов в Wikipedia, рассуждение и самопроверка ответа"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=0.2.0",
+    "openai>=1.40.0",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "a2a-sdk[http-server]>=1.1.2",
+    "uvicorn>=0.30.0",
+]
